@@ -24,10 +24,13 @@ export default function App(){
 
   return(
     <div id='app'>
-      <Form setComment={setComment}
-       setEmail={setEmail}
-       email={email}
-       comment={comment}/>
+      <h2>Seção de comentários</h2>
+      <Form setFunc={setEmail}
+       value={setEmail}
+       label='Email: '/>
+       <Form setFunc={setComment}
+        value={comment}
+        label='Comentário'/>
        <button onClick={() => addComment(comment, email)}>Enviar comentário</button>
       <section className='all-comments'>
         { !(comments.length===0) ?
