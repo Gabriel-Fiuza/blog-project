@@ -26,7 +26,7 @@ export default function App(){
     <div id='app'>
       <h2>Seção de comentários</h2>
       <Form setFunc={setEmail}
-       value={setEmail}
+       value={email}
        label='Email: '/>
        <Form setFunc={setComment}
         value={comment}
